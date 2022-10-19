@@ -27,4 +27,4 @@ do
 done
 
 export <% @var name %>_ENV='production'
-ros exec clackup --port <% @var port % > app.lisp
+ros exec clackup --port <% @var port %> app.lisp
