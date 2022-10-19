@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <title>{% block title %}{% endblock %}</title>
+
+    <meta charset="utf-8">
+    <!-- <meta name="description" content="{% block description %}{% endblock %}"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Cheese by JG">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- <meta name="og:title" content="{% block title %}{% endblock %}"> -->
+    <!-- <meta name="og:description" content="{% block description %}{% endblock %}"> -->
+    <meta name="og:type" content="website">
+    <meta name="og:site_name" content="CheeseByJG.com">
+    
+    <!-- <meta name="twitter:card" content="summary"> -->
+    <!-- <meta name="twitter:site" content="@skye__freeman"> -->
+    <!-- <meta name="twitter:title" content="{% block title %}{% endblock %}"> -->
+    <!-- <meta name="twitter:description" content="{% block description %}{% endblock %}"> -->
+    <!-- <meta name="twitter:image" content="/images/favicon.ico"> -->
+
+    <link href="https://use.typekit.net/lgc6ckm.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/generated/tailwind.css">
+    <!-- <link rel="icon" href="/images/favicon.ico"> -->
+    
+  </head>
+<body>
+  {% block content %}{% endblock %}
+
+  <!-- 100% privacy friendly analytics --> 
+  <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script> 
+  <noscript>
+    <img src="https://queue.simpleanalyticscdn.com/noscript.gif"
+	 alt=""
+	 referrerpolicy="no-referrer-when-downgrade" />
+  </noscript>
+</body>
+</html>

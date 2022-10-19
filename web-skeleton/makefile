@@ -1,0 +1,11 @@
+# 
+install-deps:
+	npm install -D tailwindcss; npx tailwindcss init
+
+# Starts each facility for developing on moontechsoftware
+develop:
+	browser-sync start --proxy "localhost:8080" --files "**/*" \
+	& npx tailwindcss -i ./static/css/main.css -o ./static/css/tailwind.css --watch
+
+build:
+	npx tailwindcss -o tailwind.css --minify; mv tailwind.css static/css/tailwind.css
