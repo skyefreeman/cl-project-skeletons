@@ -1,6 +1,5 @@
 #!/bin/bash
 
-#!/bin/bash
 set -euo pipefail
 
 function show_help() {
@@ -27,5 +26,5 @@ do
     esac
 done
 
-export CHEESEBYJG_APP_ENV='production'
-ros exec clackup --port 8082 app.lisp
+export <% @var name %>_ENV='production'
+ros exec clackup --port <% @var port % > app.lisp

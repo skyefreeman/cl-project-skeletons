@@ -1,5 +1,5 @@
 (in-package :cl-user)
-(defpackage moontechsoftware.config
+(defpackage <% @var name %>.config
   (:use :cl)
   (:import-from :envy
                 :config-env-var
@@ -10,11 +10,11 @@
            :appenv
            :developmentp
            :productionp))
-(in-package :moontechsoftware.config)
+(in-package :<% @var name %>.config)
 
 (setf (config-env-var) "APP_ENV")
 
-(defparameter *application-root*   (asdf:system-source-directory :moontechsoftware))
+(defparameter *application-root*   (asdf:system-source-directory :<% @var name %>))
 (defparameter *static-directory*   (merge-pathnames #P"static/" *application-root*))
 
 (defconfig :common

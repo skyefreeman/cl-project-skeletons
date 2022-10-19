@@ -1,7 +1,7 @@
 (in-package :cl-user)
-(defpackage moontechsoftware.db
+(defpackage <% @var name %>.db
   (:use :cl)
-  (:import-from :moontechsoftware.config
+  (:import-from :<% @var name %>.config
                 :config)
   (:import-from :datafly
                 :*connection*)
@@ -10,7 +10,7 @@
   (:export :connection-settings
            :db
            :with-connection))
-(in-package :moontechsoftware.db)
+(in-package :<% @var name %>.db)
 
 (defun connection-settings (&optional (db :maindb))
   (cdr (assoc db (config :databases))))

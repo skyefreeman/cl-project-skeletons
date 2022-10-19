@@ -1,19 +1,19 @@
-(ql:quickload :moontechsoftware)
+(ql:quickload :<% @var name %>)
 
-(defpackage moontechsoftware.app
+(defpackage <% @var name %>.app
   (:use :cl)
   (:import-from :lack.builder
                 :builder)
   (:import-from :ppcre
                 :scan
                 :regex-replace)
-  (:import-from :moontechsoftware.web
+  (:import-from :<% @var name %>.web
                 :*web*)
-  (:import-from :moontechsoftware.config
+  (:import-from :<% @var name %>.config
                 :config
                 :productionp
                 :*static-directory*))
-(in-package :moontechsoftware.app)
+(in-package :<% @var name %>.app)
 
 (builder
  (:static

@@ -1,8 +1,8 @@
 (in-package :cl-user)
-(defpackage moontechsoftware.view
+(defpackage <% @var name %>.view
   (:use :cl)
   (:import-from
-   :moontechsoftware.config)
+   :<% @var name %>.config)
 
   (:import-from
    :caveman2
@@ -18,7 +18,7 @@
    :render-json
    :render-html)
   )
-(in-package :moontechsoftware.view)
+(in-package :<% @var name %>.view)
 
 (defun render-html (string)
   (setf (getf (response-headers *response*) :content-type) "text/html")

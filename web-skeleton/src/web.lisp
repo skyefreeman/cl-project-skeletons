@@ -1,16 +1,16 @@
 (in-package :cl-user)
-(defpackage moontechsoftware.web
+(defpackage <% @var name %>.web
   (:use
    :cl
    :caveman2
-   :moontechsoftware.config
-   :moontechsoftware.view
-   :moontechsoftware.db
+   :<% @var name %>.config
+   :<% @var name %>.view
+   :<% @var name %>.db
    :spinneret
    :datafly
    :sxql)
   (:export :*web*))
-(in-package :moontechsoftware.web)
+(in-package :<% @var name %>.web)
 
 ;;
 ;; Application

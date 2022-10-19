@@ -1,7 +1,7 @@
-(defsystem "moontechsoftware"
+(defsystem "<% @var name %>"
   :version "0.1.0"
-  :author "Skye Freeman"
-  :license ""
+  :author "<% @var author %>"
+  :license "<% @var license %>"
   :depends-on ("clack"
                "lack"
                "caveman2"
@@ -23,4 +23,4 @@
                  (:file "db" :depends-on ("config"))
                  (:file "config"))))
   :description ""
-  :in-order-to ((test-op (test-op "moontechsoftware-test"))))
+  :in-order-to ((test-op (test-op "<% @var name %>-test"))))

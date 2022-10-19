@@ -1,8 +1,8 @@
 (in-package :cl-user)
-(defpackage moontechsoftware
+(defpackage <% @var name %>
   (:use :cl)
   (:import-from
-   :moontechsoftware.config
+   :<% @var name %>.config
    :config)
   (:import-from
    :clack
@@ -10,10 +10,10 @@
   (:export
    :start
    :stop))
-(in-package :moontechsoftware)
+(in-package :<% @var name %>)
 
 (defvar *appfile-path*
-  (asdf:system-relative-pathname :moontechsoftware #P"app.lisp"))
+  (asdf:system-relative-pathname :<% @var name %> #P"app.lisp"))
 
 (defvar *handler* nil)
 

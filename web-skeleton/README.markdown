@@ -1,4 +1,4 @@
-# moontechsoftware
+# <% @var name %>
 
 
 
@@ -8,9 +8,9 @@
 
 ## Author
 
-* Skye Freeman
+* <% @var author %>
 
 ## Copyright
 
-Copyright (c) 2022 Skye Freeman
+Copyright (c) 2022 <% @var author %>
 
