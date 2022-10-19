@@ -1,4 +1,5 @@
 (in-package :cl-user)
+
 (defpackage <% @var name %>.web
   (:use
    :cl
@@ -10,6 +11,7 @@
    :datafly
    :sxql)
   (:export :*web*))
+
 (in-package :<% @var name %>.web)
 
 ;;

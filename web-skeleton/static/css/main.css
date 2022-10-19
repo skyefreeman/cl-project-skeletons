@@ -5,12 +5,7 @@
 @tailwind utilities;
 
 html {
-    font-family: 'adobe-garamond-pro', serif;
-    font-style: normal;
-    font-weight: 400;
-}
-
-body, html {
-    overflow-x: hidden;
-    position: relative;
+    /* font-family: 'adobe-garamond-pro', serif; */
+    /* font-style: normal; */
+    /* font-weight: 400; */
 }

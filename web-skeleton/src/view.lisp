@@ -1,4 +1,5 @@
 (in-package :cl-user)
+
 (defpackage <% @var name %>.view
   (:use :cl)
   (:import-from
@@ -16,8 +17,8 @@
   (:export
    :render-plain-text
    :render-json
-   :render-html)
-  )
+   :render-html))
+
 (in-package :<% @var name %>.view)
 
 (defun render-html (string)

@@ -1,15 +1,23 @@
 (in-package :cl-user)
 (defpackage <% @var name %>.db
   (:use :cl)
-  (:import-from :<% @var name %>.config
-                :config)
-  (:import-from :datafly
-                :*connection*)
-  (:import-from :cl-dbi
-                :connect-cached)
-  (:export :connection-settings
-           :db
-           :with-connection))
+
+  (:import-from
+   :<% @var name %>.config
+   :config)
+  
+  (:import-from
+   :datafly
+   :*connection*)
+  
+  (:import-from
+   :cl-dbi
+   :connect-cached)
+  
+  (:export
+   :connection-settings
+   :db
+   :with-connection))
 (in-package :<% @var name %>.db)
 
 (defun connection-settings (&optional (db :maindb))

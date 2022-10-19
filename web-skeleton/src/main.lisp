@@ -1,15 +1,20 @@
 (in-package :cl-user)
+
 (defpackage <% @var name %>
   (:use :cl)
+
   (:import-from
    :<% @var name %>.config
    :config)
+  
   (:import-from
    :clack
    :clackup)
+  
   (:export
    :start
    :stop))
+
 (in-package :<% @var name %>)
 
 (defvar *appfile-path*
