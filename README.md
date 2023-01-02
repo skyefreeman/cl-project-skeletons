@@ -42,9 +42,13 @@ Changing the active project skeleton:
 
 ## Skeleton Library
 
+### default-skeleton
+
+A barebones system skeleton that stubs a file system, package, and test folder using this [Common Lisp Style Guide](http://labs.ariel-networks.com/cl-style-guide.html) as reference.
+
 ### web-skeleton
 
-A web server, based on [Caveman2](https://github.com/fukamachi/caveman) but with some changes and additions from the default settings:
+A web server, based on [Caveman2](https://github.com/fukamachi/caveman) but with some changes from the default settings:
 - Uses [Spinneret](https://github.com/ruricolist/spinneret) for HTML generation.
 - Uses [Parenscript](https://gitlab.common-lisp.net/parenscript/parenscript) for Javascript generation.
 - Provides a makefile, containing some nice development and deployment facilities.
